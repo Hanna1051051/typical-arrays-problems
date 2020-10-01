@@ -1,0 +1,36 @@
+function average(nums) {
+    return nums.reduce((a, b) => (a + b)) / nums.length;
+}
+  
+let nums=[-12, -564, -32, -912];
+
+let aveAge=average(nums)
+
+console.log(aveAge)
+
+
+
+
+
+
+function Max(num){
+   return Math.max.apply(null,num);
+}
+
+function Min(num){
+   return Math.min.apply(null, num);
+}
+
+let all = [-12, 64, -32, 912];
+
+
+let maxAge=Max(all); 
+if (maxAge === -Infinity ) maxAge = 0; 
+
+let minAge=Min(all); 
+if (minAge === Infinity ) minAge = 0; 
+
+console.log(maxAge);
+console.log(minAge);
+console.log(Math.min(-12, -564, -32, -912));
+
